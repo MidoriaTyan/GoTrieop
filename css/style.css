@@ -1,0 +1,517 @@
+body{
+    height: 100%;
+    background-color: #F6F6F6;
+    font-family: "Poppins", sans-serif;    font-size: 15px;
+    font-weight: 500;
+    color: #0F1F1C;
+    
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.btn{
+    background: linear-gradient(to right bottom, #FF7B4E, #FF584E);
+    padding: 27px 47px 26px 48px ;
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+}
+header{
+    background: linear-gradient(to right bottom, #1F5E37, #000000);
+    
+    
+}
+.title {
+    font-size: 55px;
+    font-weight: 600;
+}
+.text{
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+@media (max-width:1240px){
+    .exsplore__img img{
+        /* transition: opacity  2.5s; */
+        opacity: 0.3;
+    }
+
+
+}
+@media (max-width: 1024px){
+   
+}
+
+@media(max-width: 984px){
+    .nav__links{
+        display: none;
+    }
+    .nav__authorization{
+        display: none;
+    }
+    .nav__burger{
+        display: block !important;
+        margin: 0 15px 0 0;
+    }
+}
+
+@media (max-width: 890px) {
+    .started__img{
+        display: none;
+    }
+}
+
+
+@media(max-width: 931px){
+    .reviews {
+        flex-direction: column;
+        align-items: flex-end; /* Выровнять весь блок по правому краю */
+        text-align: right; /* Выровнять текст внутри блока по правому краю */
+    }
+
+    .reviews__img {
+        display: none; 
+    }
+
+    .reviews__info {
+        text-align: right;
+    }
+
+    .reviews__autor {
+        justify-content: flex-end;
+    }
+
+    .autor__img {
+        order: 2; 
+        margin-left: 16.5px;
+        margin-right: 0;
+    }
+
+    .autor__info {
+        order: 1; 
+        text-align: right;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .reviews__text {
+        text-align: right;
+        margin: 30px 0 30px auto; 
+        max-width: unset !important;
+    }
+
+    .reviews__title {
+        text-align: right; 
+    }
+
+    .reviews__stars {
+        text-align: right;
+    }
+
+    .exsplore__img{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .reviews__stars{
+        text-align: center;
+    }
+    .logo__footer{
+        display: none;
+    }
+}
+
+
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 57px 15px 0 15px;
+    z-index: 2;
+}
+
+.nav__logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.nav__burger{
+    cursor: pointer;
+    display: none;
+}
+
+
+.nav__links {
+    padding: 0 15px;
+}
+.link {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin: 0 40px 0 40px;
+}
+.link li a:hover{
+    text-decoration: underline;
+}
+
+
+.nav__authorization a{
+    text-decoration: none;
+    color: white;
+    margin: 0 13px 0 13px;
+}
+.nav__btn {
+    padding: 13px 44px 13px 43px ;
+
+}
+.none{
+    display: none !important;
+}
+.modal__window{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    top: 15px;
+    right: 15px;
+    border-radius: 30px;
+    background: linear-gradient(to right bottom, #FF7B4E, #FF584E);
+    z-index: 5;
+}
+.modal__links{
+    color: white;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.modal__links li{
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+
+.modal__links li:hover{
+    text-decoration: underline;
+}
+
+
+.nav__login-inputs{
+    display: flex;
+    justify-content: end;
+    
+}
+
+.nav__login-inputs input{
+    margin: 15px 10px 0 10px;
+    padding: 10px;
+    border-radius: 30px;
+    color: #0F1F1C;
+}
+
+
+
+
+
+
+
+
+main{
+    flex: 1 1 auto;
+}
+.exsplore{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px 0 15px;
+    
+}
+
+
+.exsplore__info {
+    max-width: 603px;
+    margin: 95px 0 103px 0;
+    color: white;
+    z-index: 3;
+}
+
+.info-theWorld {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 11px 30px 12px 31px;
+    line-height: 1.5;
+    border-radius: 15px;
+    margin-bottom: 3.5px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.info-title {
+    margin: 15px 0 33px 0;
+    line-height: 1.5;
+    
+}
+.info-text {
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0 0 68px 0;
+}
+.info-btn {
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+.exsplore__img{
+    position: relative;
+    z-index: 1;
+}
+.exsplore__img img{
+    position: absolute;
+    width: 608px;
+    height: 729px;
+    top: 37px;
+    right: -2px;
+}
+
+
+
+
+.destinations {
+    display: flex;
+    margin: 109px 10px 0 15px;
+    height:406px ;
+}
+
+.destinations__info{
+    margin-right: 50px;
+    max-width: 456px;
+    
+}
+
+.destinations-choice {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.destinations-title {
+    margin-bottom:37px ;
+}
+
+.destinations-text {
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+
+}
+
+.destinations-btn {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+
+
+
+.destinations__img {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+.destinations__img img{
+    padding: 0 15px 0 15px;
+    border-radius: 50px;
+    width: 335px;
+}
+
+
+.prev {
+    background-color: #FF7B4E;
+    display: inline;
+    height: 68px;
+    width: 68px;
+    border-radius: 50px;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    position: absolute;
+    top: 185px;
+    left: -25px;
+}
+
+
+
+.reviews {
+    margin: 200px 15px 0 15px;
+    display: flex;
+    
+}
+
+.reviews__img{
+    margin: 0 32px 0 0;
+    
+}
+.reviews__img img{
+    border-radius: 30px;
+    
+}
+
+.reviews__info {
+    margin: 0 0 0 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.reviews__title {
+    font-size: 45px;
+    line-height: 1.2;
+    padding: 0 0 0 17.5px;
+}
+
+
+.reviews__autor {
+    display: flex;
+    padding: 17.5px 0 0 0;
+}
+
+.autor__img img{
+    width: 138px;
+    background-color: #FF7B4E;
+    border-radius: 80px;
+    margin: 0 16.5px 0 0;
+}
+
+.autor__info {
+    padding: 0 0 0 16.5px;
+    margin-bottom: 30px;
+    align-content: center;
+    
+}
+.autor__name {
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 0 0 10px 0;
+}
+.autor__city {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+
+.reviews__text {
+    margin: 30px 0 30px 0;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 22px;
+    max-width: 491px;
+}
+.reviews__stars {
+    padding: 0 0 17px 0;
+}
+.reviews__stars img{
+    padding: 0 10px 0 10px;
+}
+
+
+
+.started {
+    position: relative;
+    margin: 233px 0 135px 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 60px;
+    text-align: center;
+}
+.started__img:nth-child(1){
+    position: absolute;
+    top: 53px;
+    right: 103px;
+}
+.started__img:nth-child(2){
+    position: absolute;
+    transform: scaleY(-1) scaleX(-1);
+    bottom: 54px;
+    left: 73px;
+}
+.started__title {
+    font-size: 45px;
+    line-height: 1.5;
+    padding: 116px 0 15px 0;
+    max-width: 519px;
+    margin: 0 auto;
+}
+.started__text {
+    padding: 15px 0 30px 0;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.4);
+    
+}
+.started__btn {
+    font-size: 20px;
+    margin: 30px 0 115px 0;
+}
+
+
+
+.subscribe {
+    margin: 0 0 119px 0;
+    text-align: center;
+    
+}
+.subscribe__title {
+    padding: 60px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+.subscribe__form{
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.subscribe__input {
+    padding: 46px 506px 47px 48px;
+    border-radius: 35px;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.4);
+}
+input:hover{
+    color: #000000;
+}
+.subscribe__btn {
+    position: absolute;
+    font-size: 25px;
+    bottom: 19px;
+    right: 0;
+    margin: 0 15px 0 15px ;
+}
+
+
+
+
+footer{
+    margin: 0 0 87px 0;
+}
+.logo__footer a{
+    color: #FF7C4E;
+}
+
+.links__footer a {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.authorization__footer a{
+    color: rgba(0, 0, 0, 0.4);
+}
